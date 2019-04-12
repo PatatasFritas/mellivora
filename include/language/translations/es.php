@@ -188,6 +188,7 @@ $lang['list_submissions_in_need_of_marking'] = 'Listar solicitudes que necesitan
 $lang['list_all_submissions'] = 'Listar todas las solicitudes';
 
 $lang['users'] = 'Usuarios';
+$lang['add_users'] = 'Añadir usuarios';
 $lang['list_users'] = 'Listar usuarios';
 $lang['user_types'] = 'Tipos de usuario';
 $lang['add_user_type'] = 'Añadir tipo de usuario';

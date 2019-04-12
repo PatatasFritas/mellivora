@@ -199,6 +199,7 @@ function menu_management () {
         <button class="btn btn-warning dropdown-toggle btn-xs" data-toggle="dropdown">', lang_get('users'), '  <span class="caret"></span></button>
         <ul class="dropdown-menu">
           <li role="presentation" class="dropdown-header">', lang_get('users'), ' </li>
+          <li><a href="',Config::get('MELLIVORA_CONFIG_SITE_ADMIN_URL'),'new_users">', lang_get('add_users'), ' </a></li>
           <li><a href="',Config::get('MELLIVORA_CONFIG_SITE_ADMIN_URL'),'list_users">', lang_get('list_users'), ' </a></li>
           <li role="presentation" class="dropdown-header">', lang_get('user_types'), ' </li>
           <li><a href="',Config::get('MELLIVORA_CONFIG_SITE_ADMIN_URL'),'new_user_type">', lang_get('add_user_type'), ' </a></li>
