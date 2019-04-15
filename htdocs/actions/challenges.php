@@ -71,7 +71,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 'available_from',
                 'available_until',
                 'num_attempts_allowed',
-                'min_seconds_between_submissions'
+                'min_seconds_between_submissions',
+                'dynamic_score'
             ),
             array(
                 'id' => $_POST['challenge']
@@ -128,6 +129,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 'marked'=>($challenge['automark'] ? '1' : '0')
             )
         );
+
+        if ($challenge['dynamic_score']) {
+            score_recalc($_POST['challenge']);
+        }
 
         if (!$challenge['automark']) {
             redirect('challenges?status=manual');
